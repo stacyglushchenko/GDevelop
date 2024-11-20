@@ -84,9 +84,43 @@
       "name": "GreenFlatBar",
       "persistentUuid": "7ee0939a-3862-4381-8305-4984624b6f2f",
       "width": 0,
-      "x": 240,
-      "y": 291,
+      "x": 361,
+      "y": 216,
       "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 138,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Cookie",
+      "persistentUuid": "120e3979-13bc-4f96-9655-4f5b0c157798",
+      "width": 144,
+      "x": 612,
+      "y": 272,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 17,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NewTiledSprite",
+      "persistentUuid": "221e6ad1-2508-4c68-81c4-2c68c5d6a0f4",
+      "width": 18,
+      "x": 704,
+      "y": 397,
+      "zOrder": 10,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -179,7 +213,13 @@
       "name": "cat",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "Energy",
+          "type": "number",
+          "value": 16
+        }
+      ],
       "effects": [],
       "behaviors": [
         {
@@ -368,6 +408,77 @@
           }
         }
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "8ce3b5374109cb46755ba3e96fc0ae33799a98b20d20671f778b2d3d28fd40d4",
+      "name": "Cookie",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Cookie.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 2
+                      },
+                      {
+                        "x": 14,
+                        "y": 2
+                      },
+                      {
+                        "x": 14,
+                        "y": 14
+                      },
+                      {
+                        "x": 2,
+                        "y": 14
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "height": 100,
+      "name": "NewTiledSprite",
+      "texture": "Cookie.png2",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 100,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -384,6 +495,12 @@
       },
       {
         "objectName": "GreenFlatBar"
+      },
+      {
+        "objectName": "Cookie"
+      },
+      {
+        "objectName": "NewTiledSprite"
       }
     ]
   },
@@ -404,15 +521,6 @@
         },
         {
           "type": {
-            "value": "ResetObjectTimer"
-          },
-          "parameters": [
-            "cat",
-            "\"Energy\""
-          ]
-        },
-        {
-          "type": {
             "value": "ZoomCamera"
           },
           "parameters": [
@@ -420,6 +528,16 @@
             "2",
             "",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "TiledSpriteObject::XOffset"
+          },
+          "parameters": [
+            "NewTiledSprite",
+            "+",
+            "100*TimeDelta()"
           ]
         }
       ]
@@ -467,15 +585,13 @@
       "actions": [
         {
           "type": {
-            "value": "Health::Health::Hit"
+            "value": "SetNumberObjectVariable"
           },
           "parameters": [
             "cat",
-            "Health",
-            "-10",
-            "10",
-            "",
-            ""
+            "Energy",
+            "-",
+            "1"
           ]
         },
         {
@@ -492,7 +608,79 @@
     {
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [],
-      "actions": []
+      "actions": [
+        {
+          "type": {
+            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+          },
+          "parameters": [
+            "GreenFlatBar",
+            "=",
+            "cat.Variable(Energy)",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ResetObjectTimer"
+          },
+          "parameters": [
+            "cat",
+            "\"Energy\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "cat",
+            "Cookie",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Cookie"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberObjectVariable"
+          },
+          "parameters": [
+            "cat",
+            "Energy",
+            "+",
+            "1"
+          ]
+        }
+      ]
     }
   ],
   "layers": [

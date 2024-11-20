@@ -205,6 +205,28 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/c090d31cafed0c8ef7bb4d5af75a7dbf7149bcc03a7d5d63ae997d59100e362e_Flat Bar White Border.png",
           "name": "Flat Bar White Border.png"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Cookie.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Cookie.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Pixel art RPG Items/Food/2362380e4c35ca6523aa496c9594a701ff19d4520030b79952b5535b825b0a6d_Cookie.png",
+          "name": "Cookie.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Cookie.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Cookie.png2",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
