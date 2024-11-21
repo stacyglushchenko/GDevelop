@@ -227,6 +227,50 @@
         "name": "Cookie.png2",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Apple_No Shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Apple_No Shadow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/Food/42b8161f082ecc59ce6e8564c2e99ada4d5e37576541a3dffff5542bfa857321_Apple_No Shadow.png",
+          "name": "Apple_No Shadow.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Apple_Shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Apple_Shadow.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/32x32 Fantasy Icons Pack v2/Icons/Food/e6d86ce6d53503286d31487959bdf13e0010b771fcf75e0a793c6c460210b7c0_Apple_Shadow.png",
+          "name": "Apple_Shadow.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "animal_control.webp",
+        "kind": "image",
+        "metadata": "",
+        "name": "animal_control.webp",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite3",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -249,6 +293,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/game"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/end"
     }
   ],
   "externalEvents": [],
