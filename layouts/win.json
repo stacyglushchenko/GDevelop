@@ -1,8 +1,8 @@
 {
   "b": 209,
   "disableInputWhenNotFocused": true,
-  "mangledName": "Credits",
-  "name": "Credits",
+  "mangledName": "Win",
+  "name": "Win",
   "r": 209,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
@@ -28,14 +28,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 723,
+      "height": 735,
       "keepRatio": true,
       "layer": "",
       "name": "NewTiledSprite",
-      "persistentUuid": "b705a3b0-4bb2-4f63-910b-69dcbca29484",
-      "width": 1281,
-      "x": -4,
-      "y": -2,
+      "persistentUuid": "971b9fe8-b65b-4fcd-80f5-865c4b1e43dd",
+      "width": 888,
+      "x": 215,
+      "y": -5,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -43,15 +43,16 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1,
       "keepRatio": true,
       "layer": "",
-      "name": "Credits",
-      "persistentUuid": "e6ecefd0-eb9d-4ef6-892f-9379b9d1a84b",
-      "width": 0,
-      "x": 30,
-      "y": 25,
+      "name": "winner",
+      "persistentUuid": "63596325-dc74-482c-81b2-528f24dfc447",
+      "width": 270,
+      "x": 543,
+      "y": 183,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -59,16 +60,34 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 48,
+      "height": 106,
       "keepRatio": true,
       "layer": "",
-      "name": "PurpleButtonWithShadow",
-      "persistentUuid": "02715d5a-e8be-4016-83e6-1420d5d61444",
-      "width": 0,
-      "x": 20,
-      "y": 632,
+      "name": "BlueButtonWithShadow",
+      "persistentUuid": "6fe73a81-6f0c-4528-aacc-020e0837d6bf",
+      "width": 215,
+      "x": 429,
+      "y": 487,
       "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 48,
+      "height": 107,
+      "keepRatio": true,
+      "layer": "",
+      "name": "RedButtonWithShadow",
+      "persistentUuid": "80e1ab60-08ed-4bdd-9298-7b450f78fb33",
+      "width": 216,
+      "x": 671,
+      "y": 486,
+      "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -79,7 +98,7 @@
       "assetStoreId": "",
       "height": 32,
       "name": "NewTiledSprite",
-      "texture": "Screenshot 2024-11-27 at 5.39.23 PM.png",
+      "texture": "Screenshot 2024-11-27 at 7.26.17 PM.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 32,
       "variables": [],
@@ -90,25 +109,25 @@
       "assetStoreId": "",
       "bold": false,
       "italic": false,
-      "name": "Credits",
+      "name": "winner",
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Coding: Stacy Glushchenko",
+      "string": "Yay you made it home to your family all good!",
       "font": "d73fbc705487707ea61faa2b865e21e3b24bea3319f75c2a124ad13bcae99ab4_Kenney Mini Square.ttf",
       "textAlignment": "left",
-      "characterSize": 40,
+      "characterSize": 30,
       "color": {
-        "b": 255,
-        "g": 255,
-        "r": 255
+        "b": 0,
+        "g": 0,
+        "r": 0
       },
       "content": {
         "bold": false,
-        "isOutlineEnabled": false,
+        "isOutlineEnabled": true,
         "isShadowEnabled": false,
         "italic": false,
         "outlineColor": "255;255;255",
@@ -120,17 +139,17 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Coding: Stacy Glushchenko",
+        "text": "Yay you made it home to your family all good!",
         "font": "d73fbc705487707ea61faa2b865e21e3b24bea3319f75c2a124ad13bcae99ab4_Kenney Mini Square.ttf",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
-        "characterSize": 40,
-        "color": "255;255;255"
+        "characterSize": 30,
+        "color": "0;0;0"
       }
     },
     {
-      "assetStoreId": "a48315b9a9c655af87118d7bb8f6be03b4dbb14e066387849b2d2d4c3600573c",
-      "name": "PurpleButtonWithShadow",
+      "assetStoreId": "33302f0b615672a2e96316c096e13ad8d7242adba8bd5709538691894f0eae6e",
+      "name": "BlueButtonWithShadow",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -149,7 +168,7 @@
           "height": 69,
           "leftMargin": 16,
           "rightMargin": 16,
-          "texture": "Purple Button With Shadow_Hovered.png",
+          "texture": "Blue Button With Shadow_Hovered.png",
           "tiled": true,
           "topMargin": 16,
           "width": 192
@@ -159,7 +178,7 @@
           "height": 69,
           "leftMargin": 16,
           "rightMargin": 16,
-          "texture": "Purple Button With Shadow_Idle.png",
+          "texture": "Blue Button With Shadow_Idle.png",
           "tiled": true,
           "topMargin": 16,
           "width": 192
@@ -169,7 +188,7 @@
           "italic": false,
           "smoothed": true,
           "underlined": false,
-          "string": "BACK",
+          "string": "PLAY AGAIN",
           "font": "CantoraOne-Regular.ttf",
           "textAlignment": "center",
           "characterSize": 40,
@@ -192,7 +211,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "BACK",
+            "text": "PLAY AGAIN",
             "font": "CantoraOne-Regular.ttf",
             "textAlignment": "center",
             "verticalTextAlignment": "top",
@@ -205,7 +224,91 @@
           "height": 69,
           "leftMargin": 16,
           "rightMargin": 16,
-          "texture": "Purple Button With Shadow_Pressed.png",
+          "texture": "Blue Button With Shadow_Pressed.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        }
+      }
+    },
+    {
+      "assetStoreId": "5faf2b0415c271fa6e747283ed36297a95f04d2b6c477a7b011775fa6fb444ee",
+      "name": "RedButtonWithShadow",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 16,
+        "RightPadding": 16,
+        "PressedLabelOffsetY": 3,
+        "BottomPadding": 32,
+        "TopPadding": 32,
+        "HoveredFadeOutDuration": 0.25
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 16,
+          "height": 69,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Red Button With Shadow_Hovered.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        },
+        "Idle": {
+          "bottomMargin": 16,
+          "height": 69,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Red Button With Shadow_Idle.png",
+          "tiled": true,
+          "topMargin": 16,
+          "width": 192
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "MENU",
+          "font": "CantoraOne-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "MENU",
+            "font": "CantoraOne-Regular.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 40,
+            "color": "255;255;255"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 16,
+          "height": 69,
+          "leftMargin": 16,
+          "rightMargin": 16,
+          "texture": "Red Button With Shadow_Pressed.png",
           "tiled": true,
           "topMargin": 16,
           "width": 192
@@ -220,10 +323,13 @@
         "objectName": "NewTiledSprite"
       },
       {
-        "objectName": "Credits"
+        "objectName": "winner"
       },
       {
-        "objectName": "PurpleButtonWithShadow"
+        "objectName": "BlueButtonWithShadow"
+      },
+      {
+        "objectName": "RedButtonWithShadow"
       }
     ]
   },
@@ -233,10 +339,62 @@
       "conditions": [
         {
           "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ZoomCamera"
+          },
+          "parameters": [
+            "",
+            "1.5",
+            "",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
             "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
           },
           "parameters": [
-            "PurpleButtonWithShadow",
+            "BlueButtonWithShadow",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Game\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+          },
+          "parameters": [
+            "RedButtonWithShadow",
             ""
           ]
         }
