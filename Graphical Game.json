@@ -486,6 +486,54 @@
         "name": "Screenshot 2024-11-27 at 7.26.17 PM.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Brown Button With Shadow_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Brown Button With Shadow_Hovered.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/6744d1d1623a1dd0307667df92a05ab7d33bd968fd4013f06c469331d120df2e_Brown Button With Shadow_Hovered.png",
+          "name": "Brown Button With Shadow_Hovered.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Brown Button With Shadow_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Brown Button With Shadow_Idle.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/cd4e44711fcc178a4cacfc4c53455e174fdcc9c21a3b08adc3fe4526dfbc3423_Brown Button With Shadow_Idle.png",
+          "name": "Brown Button With Shadow_Idle.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Brown Button With Shadow_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Brown Button With Shadow_Pressed.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/47067128526b3c56071d01ec19f87649cd4b00f47432cb229e2c3cea96489b6b_Brown Button With Shadow_Pressed.png",
+          "name": "Brown Button With Shadow_Pressed.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Screenshot 2024-12-03 at 12.32.35 AM.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Screenshot 2024-12-03 at 12.32.35 AM.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -516,6 +564,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/win"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/rules"
     }
   ],
   "externalEvents": [],

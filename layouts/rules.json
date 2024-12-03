@@ -1,8 +1,8 @@
 {
   "b": 209,
   "disableInputWhenNotFocused": true,
-  "mangledName": "Credits",
-  "name": "Credits",
+  "mangledName": "Rules",
+  "name": "Rules",
   "r": 209,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
@@ -28,32 +28,31 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 723,
+      "height": 716,
       "keepRatio": true,
       "layer": "",
       "name": "NewTiledSprite",
-      "persistentUuid": "b705a3b0-4bb2-4f63-910b-69dcbca29484",
-      "width": 1281,
-      "x": -4,
-      "y": -2,
-      "zOrder": 1,
+      "persistentUuid": "e4e180da-6eeb-44f9-a5d3-583fe5712f24",
+      "width": 1283,
+      "x": -2,
+      "y": 3,
+      "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     },
     {
       "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 163,
+      "customSize": false,
+      "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "Credits",
-      "persistentUuid": "e6ecefd0-eb9d-4ef6-892f-9379b9d1a84b",
-      "width": 1023,
-      "x": 20,
-      "y": 18,
-      "zOrder": 2,
+      "name": "Rules",
+      "persistentUuid": "dccdb629-28f3-40f1-9e13-81e610f5d5df",
+      "width": 0,
+      "x": 45,
+      "y": 40,
+      "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -65,11 +64,11 @@
       "keepRatio": true,
       "layer": "",
       "name": "PurpleButtonWithShadow",
-      "persistentUuid": "02715d5a-e8be-4016-83e6-1420d5d61444",
+      "persistentUuid": "93649b08-ccef-4598-99b3-ecf8af996520",
       "width": 0,
-      "x": 20,
-      "y": 632,
-      "zOrder": 3,
+      "x": 39,
+      "y": 634,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -78,38 +77,27 @@
   "objects": [
     {
       "assetStoreId": "",
-      "height": 32,
-      "name": "NewTiledSprite",
-      "texture": "Screenshot 2024-11-27 at 5.39.23 PM.png",
-      "type": "TiledSpriteObject::TiledSprite",
-      "width": 32,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
-    },
-    {
-      "assetStoreId": "",
       "bold": false,
       "italic": false,
-      "name": "Credits",
+      "name": "Rules",
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Coding: Stacy Glushchenko\nDesign: El Friebe\nMusic and Game Idea: Dahani Ram",
+      "string": "You are a cat trying to find its' way back home through the city. \nYou must eat food to gain energy, and you lose energy over time, \nbe careful not to get to zero, or you'll lose. \nWatch out for the animal control that you have to fight off by pressing \"f\".\n To get home, you have to quickly find the green orbs that appear, \notherwise you won't make it!",
       "font": "d73fbc705487707ea61faa2b865e21e3b24bea3319f75c2a124ad13bcae99ab4_Kenney Mini Square.ttf",
-      "textAlignment": "left",
-      "characterSize": 50,
+      "textAlignment": "center",
+      "characterSize": 30,
       "color": {
-        "b": 255,
-        "g": 255,
-        "r": 255
+        "b": 0,
+        "g": 0,
+        "r": 0
       },
       "content": {
         "bold": false,
-        "isOutlineEnabled": true,
+        "isOutlineEnabled": false,
         "isShadowEnabled": false,
         "italic": false,
         "outlineColor": "255;255;255",
@@ -121,12 +109,12 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Coding: Stacy Glushchenko\nDesign: El Friebe\nMusic and Game Idea: Dahani Ram",
+        "text": "You are a cat trying to find its' way back home through the city. \nYou must eat food to gain energy, and you lose energy over time, \nbe careful not to get to zero, or you'll lose. \nWatch out for the animal control that you have to fight off by pressing \"f\".\n To get home, you have to quickly find the green orbs that appear, \notherwise you won't make it!",
         "font": "d73fbc705487707ea61faa2b865e21e3b24bea3319f75c2a124ad13bcae99ab4_Kenney Mini Square.ttf",
-        "textAlignment": "left",
+        "textAlignment": "center",
         "verticalTextAlignment": "top",
-        "characterSize": 50,
-        "color": "255;255;255"
+        "characterSize": 30,
+        "color": "0;0;0"
       }
     },
     {
@@ -212,19 +200,30 @@
           "width": 192
         }
       }
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "NewTiledSprite",
+      "texture": "Screenshot 2024-12-03 at 12.32.35 AM.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "NewTiledSprite"
-      },
-      {
-        "objectName": "Credits"
+        "objectName": "Rules"
       },
       {
         "objectName": "PurpleButtonWithShadow"
+      },
+      {
+        "objectName": "NewTiledSprite"
       }
     ]
   },
