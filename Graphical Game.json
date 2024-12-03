@@ -534,6 +534,56 @@
         "name": "Screenshot 2024-12-03 at 12.32.35 AM.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/Downtown Boogie.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "65d2524bf89daae21798edf4302b5178779ea16e1ce80a7fcfcac62f9e605ad2_Downtown Boogie.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Music/Chill/65d2524bf89daae21798edf4302b5178779ea16e1ce80a7fcfcac62f9e605ad2_Downtown Boogie.aac",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "greycat3.webp",
+        "kind": "image",
+        "metadata": "",
+        "name": "greycat3.webp",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/greycat3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "greycat3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/jumping.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "jumping",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/jumping2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "jumping2",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []

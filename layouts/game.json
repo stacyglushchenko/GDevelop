@@ -426,7 +426,7 @@
       ],
       "animations": [
         {
-          "name": "",
+          "name": "normal",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -436,6 +436,55 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "greycat2.webp",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 13,
+                        "y": 11
+                      },
+                      {
+                        "x": 243,
+                        "y": 11
+                      },
+                      {
+                        "x": 243,
+                        "y": 245
+                      },
+                      {
+                        "x": 13,
+                        "y": 245
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "jumping",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 1,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "jumping2",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1247,6 +1296,17 @@
             "cat",
             "PlatformerObject"
           ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "cat",
+            "Animation",
+            "=",
+            "\"jumping\""
+          ]
         }
       ]
     },
@@ -1404,6 +1464,18 @@
           },
           "parameters": [
             "GreenOrb2"
+          ]
+        },
+        {
+          "type": {
+            "value": "PlayMusic"
+          },
+          "parameters": [
+            "",
+            "65d2524bf89daae21798edf4302b5178779ea16e1ce80a7fcfcac62f9e605ad2_Downtown Boogie.aac",
+            "",
+            "20",
+            ""
           ]
         }
       ]
@@ -1817,7 +1889,7 @@
             "",
             "5151aab7b2974cafe47880b1460939d5903ed828d1c62ccae62ee60a3235fb8e_1up 7.aac",
             "",
-            "20",
+            "40",
             "1"
           ]
         },
@@ -2110,6 +2182,44 @@
             "",
             "\"Win\"",
             ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::Name"
+          },
+          "parameters": [
+            "cat",
+            "Animation",
+            "=",
+            "\"jumping\""
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
+          },
+          "parameters": [
+            "cat",
+            "Animation"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "cat",
+            "Animation",
+            "=",
+            "\"normal\""
           ]
         }
       ]
